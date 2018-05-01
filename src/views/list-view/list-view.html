@@ -1,0 +1,16 @@
+<template>
+  <require from="./list-view.css"></require>
+  <require from="aurelia-kendoui-bridge/listview/listview"></require>
+  <require from="aurelia-kendoui-bridge/common/template"></require>
+  <section>
+    <ak-list-view k-data-source.bind="dataSource">
+      <ak-template>
+        <div class="product">
+          <img src="https://demos.telerik.com/kendo-ui/content/web/foods/${ProductID}.jpg" alt="${ProductName} image" />
+          <h3>${ProductName}</h3>
+          <p>${UnitPrice}</p>
+        </div>
+      </ak-template>
+    </ak-list-view>
+  </section>
+</template>
